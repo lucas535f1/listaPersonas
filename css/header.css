@@ -1,0 +1,66 @@
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+  * {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background-color: #479EE6;
+      width: 100vw;
+      overflow-x: hidden;
+  }
+
+  header {
+      width: 100%;
+      background-color: #E6C330;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      position: sticky;
+      top: 0;
+  }
+
+  header a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-size: 2.7rem;
+      padding: .7rem;
+      font-weight: 600;
+  }
+
+  header a:focus {
+      outline: none;
+  }
+  header a:hover{
+    color: black;
+  }
+
+  .volver {
+      position: fixed;
+      top: 15vh;
+      left: 5vw;
+      font-weight: 600;
+      font-size: 1.4rem;
+      background-color: #E6A747;
+      border: none;
+      padding: .4rem;
+      width: 7rem;
+      border-radius: .2rem;
+      transition: all .3s;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      cursor: pointer;
+      text-align: center;
+      color: black;
+      text-decoration: none;
+  }
+
+
+
+  .volver:hover {
+      background-color: #996411;
+      border-top-right-radius: .8rem;
+      color: black;
+      text-decoration: none;
+  }

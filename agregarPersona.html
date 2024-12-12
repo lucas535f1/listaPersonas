@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lucas Marsiglia">
+    <link rel="stylesheet" href="./css/agregarPersona.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <title>Agregar Persona</title>
+</head>
+<script src="./js/agregarPersona.js"></script>
+
+<body>
+    <header>
+        <a href="./">Lista de personas</a>
+    </header>
+    <a class="volver" href="./">Volver</a>
+    <section>
+        <h2>Agregar Persona</h2>
+        <form action="./controlador/addPersona.php" method="post">
+            <div id="inputContainer">
+                <div>
+                    <label for="nombre">nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Ingrese el nombre" autocomplete="off">
+                </div>
+                <div>
+                    <label for="apellido">apellido:</label>
+                    <input type="text" name="apellido" id="apellido" required placeholder="Ingrese el apellido" autocomplete="off">
+                </div>
+                <div id="inputCedula">
+                    <label for="cedula">cedula:</label>
+                    <input type="number" name="cedula" id="inputCedula" required placeholder="Ingrese la cedula" autocomplete="off">
+                    <button class="menos" type='button' onclick="eliminarInput('Cedula')">-</button>
+                </div>
+                <div id="inputMail">
+                    <label for="mail">mail:</label>
+                    <input type="mail" name="mail" id="mail" required placeholder="Ingrese el mail" autocomplete="off">
+                    <button class="menos" type='button' onclick="eliminarInput('Mail')">-</button>
+                </div>
+            </div>
+            <div class="submit">
+                <button class="mas" type="button" onclick="agregarInput()">+</button>
+                <span></span>
+                <button type="submit">Guardar</button>
+            </div>
+    </section>
+    </form>
+</body>
+
+</html>
