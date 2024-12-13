@@ -1,7 +1,7 @@
 <?php
 class Db
 {
-    private $server = "mysqlCT";
+    private $server = "mysqldb";
     private $username = "root";
     private $password = "root";
     private $db = "lista_personas";
