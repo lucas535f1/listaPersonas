@@ -1,7 +1,7 @@
 <?php
 class Db
 {
-    private $server = "localhost";
+    private $server = "mysqlCT";
     private $username = "root";
     private $password = "root";
     private $db = "lista_personas";
