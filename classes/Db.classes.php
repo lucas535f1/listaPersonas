@@ -3,7 +3,7 @@ class Db
 {
     private $server = "localhost";
     private $username = "root";
-    private $password = "";
+    private $password = "root";
     private $db = "lista_personas";
 
     protected function conn()
