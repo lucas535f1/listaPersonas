@@ -4,7 +4,7 @@ if (!isset($_POST['nombre']) || !isset($_POST['apellido'])) {
 }
 
 require "../classes/Db.classes.php";
-require "../classes/addPersona.classes.php";
+require "../classes/AddPersona.classes.php";
 
 $nombre=$_POST['nombre'];
 $apellido=$_POST['apellido'];

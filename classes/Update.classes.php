@@ -32,7 +32,7 @@ class Update extends Db
 
     public function updateAtributo()
     {
-        $query = $this->conn()->prepare("UPDATE `atributos` SET `valor`= :valor WHERE `id` = :id AND `dato`= :dato");
+        $query = $this->conn()->prepare("UPDATE `Atributos` SET `valor`= :valor WHERE `id` = :id AND `dato`= :dato");
         $query->bindParam('id', $this->id);
         $query->bindParam('dato', $this->dato);
         $query->bindParam('valor', $this->valor);
